@@ -1,0 +1,84 @@
+.hero {
+    width: 100%;
+    &__inner {
+        padding: 130px 80px 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__info {
+        max-width: 500px;
+        &__title {
+            max-width: 430px;
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 60px;
+            color: #21243D;
+        }
+        &__text {
+            margin: 40px 0;
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #21243D;
+        }
+        &__link {
+            width: 210px;
+            display: inline-block;
+            padding: 15px 20px;
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 29px;
+            color: #FFFFFF;
+            text-decoration: none;
+            background: #FF6464;
+            border-radius: 2px;
+            transition: all 0.2s ease;
+            &:hover {
+                color: #f4e8e8;
+                background: #ec7272;
+            }
+        }
+        &__img {
+            border-radius: 50%;
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .hero {
+        width: 100%;
+        &__inner {
+            padding: 30px 0px 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__info {
+            margin-top: 35px;
+            &__title {
+                max-width: 300px;
+                margin: 0 auto;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 40px;
+                text-align: center;
+            }
+            &__text {
+                margin: 40px 0;
+                text-align: center;
+            }
+            &__link {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}

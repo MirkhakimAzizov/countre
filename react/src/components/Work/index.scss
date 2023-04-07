@@ -1,0 +1,93 @@
+.work {
+    width: 100%;
+    padding: 20px 0 80px;
+    &__inner {
+        padding: 0 80px;
+    }
+    &__title {
+        font-family: 'Heebo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 60px;
+        color: #21243D;
+    }
+    &__list {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    &__item {
+        width: 100%;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        border-bottom: 1px solid #E0E0E0;
+        &__img {
+            border-radius: 6px;
+        }
+        &__title {
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 44px;
+            color: #21243D;
+        }
+        &__year {
+            display: inline-block;
+            margin: 15px 25px 30px 0;
+            padding: 2px 10px;
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            color: #FFFFFF;
+            background: #142850;
+            border-radius: 16px;
+        }
+        &__type {
+            display: inline-block;
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 29px;
+            color: #8695A4;
+        }
+        &__text {
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 24px;
+            color: #21243D;
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .work {
+        width: 100%;
+        padding: 20px 0 0px;
+        &__inner {
+            padding: 0 0px;
+        }
+        &__title {
+            text-align: center;
+            font-size: 18px;
+        }
+        &__item {
+            flex-direction: column;
+            &__img {
+                width: 100%;
+                border-radius: 6px;
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.post {
+    width: 100%;
+    padding: 30px 0;
+    background: #EDF7FA;
+    &__inner {
+        padding: 0 80px;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__title {
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 60px;
+            display: flex;
+            align-items: flex-end;
+            color: #21243D;
+        }
+        &__link {
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: right;
+            color: #00A8CC;
+            text-decoration: none;
+        }
+    }
+    &__list {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+    &__item {
+        max-width: 420px;
+        padding: 24px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+        border-radius: 4px;
+        &__title {
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 38px;
+            color: #21243D;
+        }
+        &__text {
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #21243D;
+        }
+        &__info {
+            padding: 20px 0 10px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 25px;
+            align-items: center;
+            font-family: 'Heebo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            color: #21243D;
+            &__date {
+                padding: 0;
+                padding-right: 25px;
+                border-right: 1px solid #000000;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .post {
+        width: 100%;
+        padding: 30px 0;
+        background: #EDF7FA;
+        &__inner {
+            padding: 0;
+        }
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__title {
+                font-size: 18px;
+                margin: 0 auto;
+            }
+            &__link {
+                display: none;
+            }
+        }
+        &__list {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}
